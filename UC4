@@ -1,0 +1,55 @@
+// Program Name: OOPSBannerAppUC4
+// Use Case: UC4 - Array & Loops
+// Description: Displays "OOPS" banner using String array and enhanced for-loop
+// Improvement: Removes repetitive print statements and improves modularity
+
+public class OOPSBannerAppUC4 {
+
+    public static void main(String[] args) {
+
+        // Creating banner rows using String.join()
+        String row1 = String.join("   ",
+                " ***** ",
+                " ***** ",
+                " ***** ",
+                " ***** ");
+
+        String row2 = String.join("   ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*      ");
+
+        String row3 = String.join("   ",
+                "*     *",
+                "*     *",
+                "*     *",
+                "*      ");
+
+        String row4 = String.join("   ",
+                "*     *",
+                "*     *",
+                " ***** ",
+                " ***** ");
+
+        String row5 = String.join("   ",
+                "*     *",
+                "*     *",
+                "*      ",
+                "      *");
+
+        String row6 = String.join("   ",
+                " ***** ",
+                " ***** ",
+                "*      ",
+                " ***** ");
+
+        // Storing all rows inside a String array
+        String[] bannerLines = { row1, row2, row3, row4, row5, row6 };
+
+        // Printing banner using enhanced for-loop
+        for (String line : bannerLines) {
+            System.out.println(line);
+        }
+    }
+}
